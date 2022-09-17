@@ -27,9 +27,8 @@ def main(args):
  
     pDetection.set_silence(-40)
     config_data = json.load(open("config.json"))
-    key_map = {
-        
-    }
+    
+    key_map = {}
     for bind in config_data["key_map"]:
         #print(bind)
         key_map[bind["key"]] = [bind["min"], bind["max"]]
