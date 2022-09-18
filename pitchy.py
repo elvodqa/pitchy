@@ -44,10 +44,7 @@ def main(args):
             dtype=aubio.float_type)
         pitch = pDetection(samples)[0]
 
-        volume = num.sum(samples**2)/len(samples)
-        volume = "{:6f}".format(volume)
-
-        print(str(pitch) + " " + str(volume))
+        print("Pitch: " + str(pitch))
 
         for key, val in key_map.items():
             if pitch > val[0] and pitch < val[1]:
