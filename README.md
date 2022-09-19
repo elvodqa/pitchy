@@ -20,7 +20,7 @@ python pitchy.py
 
 ### Setting up config
 
-Config files is fairly easy to use. For example, adding option to press K between 100 and 1000 pitch values is
+Setting up a config is really easy. For example, adding option to press K between 100 and 1000 pitch values is
 
 ```json
 {
